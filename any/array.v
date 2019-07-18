@@ -9,8 +9,8 @@ fn main(){
     /*
     if true {
         a := 3
-    } 
-   */ 
+    }
+   */
 
    mut b := 100
    b = 120
@@ -19,7 +19,7 @@ fn main(){
    mut names := ['Jon', 'Tom']
 
    names << 'Taro'
-   
+
    println(names.len)
    println(names.contains('Jack'))
    println('Jon' in names)
@@ -28,5 +28,8 @@ fn main(){
         println(name)
     }
 
-}
+    for index, name in names{
+       println(name + ', ' + index.str())
+    }
 
+}
